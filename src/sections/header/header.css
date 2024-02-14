@@ -1,0 +1,14 @@
+.header__image {
+    display: flex;
+    justify-content: center;
+}
+
+.header__image img{
+    height: 80vh;
+    width: 70%;
+    object-fit: cover;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    border: .1rem solid #101010;
+    padding: 0 1rem 1rem 1rem;
+}

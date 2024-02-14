@@ -1,13 +1,147 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-white: #ffffff;
+  --color-white-1: #efefef;
+  --color-black: #171717;
+  --color-black-1: #2f2f2f;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  
+  --transition: all 500ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat';
+  line-height: 1.7;
+  font-weight: 100;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+section {
+    transition: var(--transition);
+    margin-top: 7rem;
+}
+
+section > h2 {
+  text-align: center;
+}
+
+section > p {
+  text-align: center;
+  margin: .5rem auto 4rem;
+  color: var(--color-black);
+}
+
+a {
+  color: var(--color-black);
+  transition: var(--transition)
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 7rem;
+  text-align: center;
+  color: #222;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: .6rem 1.5rem;
+  border: .1rem solid var(--color-white-1);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-.5rem);
+}
+
+.primary {
+  background: var(--color-2);
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1124px) {
+  .container {
+      width: var(--container-width-md);
+  }
+
+  section {
+      padding: 4rem 0;
+  }
+
+  section > p {
+      width: 70%;
+      margin-bottom: 3rem;
+  }
+
+  h1 {
+      font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 4rem
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  h3 {
+      font-size: 1.4rem;
+  }
+
+  .btn {
+      padding: .6rem 1.5rem;
+  }
+
+  section > p {
+      width: var(--container-width-md);
+  }
 }

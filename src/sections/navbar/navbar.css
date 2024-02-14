@@ -1,0 +1,22 @@
+nav {
+    width: 100vw;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    border-bottom: .1rem solid #101010;
+    padding: 3rem 0 1rem;
+    z-index: 99;
+    display: grid;
+}
+
+.header__content h1 {
+    font-size: 4rem;
+    font-family: 'Monsieur La Doulaise';
+}
+
+.nav__items {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}

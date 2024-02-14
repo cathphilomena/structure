@@ -1,0 +1,36 @@
+.gallery__title {
+    font-weight: 100;
+}
+
+.outer__container {
+    position: relative ;
+    height: 300vh;
+}
+
+.outer__container > p {
+    width: 50%;
+    margin-inline: auto;
+}
+
+.parallax__container {
+    position: sticky;
+    top: 15rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallax {
+    display: flex;
+    gap: 4rem;
+}
+
+.parallax__image-container img {
+    position: relative;
+    width: 15rem;
+}
+
+.parallax__image {
+    position: absolute;
+    inset: 0;
+}

@@ -1,0 +1,95 @@
+#contact h2 {
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.container.contact__container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 1.7rem;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: .7rem;
+    text-align: center;
+    border: .1rem solid var(--color-black);
+    transition: var(--transition);
+    width: 13rem;
+}
+
+.contact__option:hover {
+    background: var(--color-white-1);
+}
+
+.contact__option-icon {
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+.contact__option h4 {
+    margin-bottom: .7rem;
+    font-weight: 100;
+}
+
+.contact__option h5 {
+    font-weight: 100;
+}
+
+.contact__option a {
+    display: inline-block;
+    font-size: .75rem;
+    color: #171717;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    background: transparent;
+    border-bottom: .1rem solid var(--color-black);
+    resize: none;
+    color: var(--color-white);
+}
+
+.btn-primary {
+    font-size: 1rem;
+    font-weight: 100;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        margin-top: 5rem;
+    }
+
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem
+    }
+
+    .contact__option {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: var(--container-width-md)
+    }
+
+}
