@@ -9,7 +9,7 @@ const Gallery = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["30%", "-49%"]);
 
   return (
       
